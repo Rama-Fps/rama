@@ -44,7 +44,7 @@ if version_info[0] < 3 or version_info[1] < 8:
 # Check if the config was edited by using the already used variable.
 # Basically, its the 'virginity check' for the config file ;)
 CONFIG_CHECK = os.environ.get(
-    "___________PLOX_______REMOVE_____THIS_____LINE__________", None)
+    "", None)
 
 if CONFIG_CHECK:
     LOGS.info(
@@ -53,8 +53,8 @@ if CONFIG_CHECK:
     quit(1)
 
 # Telegram App KEY and HASH
-API_KEY = os.environ.get("API_KEY", None)
-API_HASH = os.environ.get("API_HASH", None)
+API_KEY = os.environ.get("API_KEY", "1465076")
+API_HASH = os.environ.get("API_HASH", "0ff494ddc0e71990c162cea427855d2d")
 
 # Userbot Session String
 STRING_SESSION = os.environ.get("STRING_SESSION", None)
@@ -71,7 +71,7 @@ ALIVE_NAME = os.environ.get("ALIVE_NAME", None)
 
 # Default .alive logo
 ALIVE_LOGO = ( 
-    os.environ.get("ALIVE_LOGO") or "https://telegra.ph/file/8a7c3d8ac26751d42465e.jpg"
+    os.environ.get("ALIVE_LOGO") or "https://telegra.ph/file/db0e9001fbe97b41f812c.jpg"
 )
 
 # Default .alive username
